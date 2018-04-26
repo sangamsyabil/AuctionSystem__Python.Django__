@@ -20,11 +20,11 @@ class UserCreateForm(UserCreationForm):
             user.save()
         return user
 
-
-class AddProductForm(forms.ModelForm):
-    bid_end_date = forms.DateField(widget=forms.TextInput(attrs={'class': 'datepicker'}))
-
-    class Meta:
-        model = Product
-        fields = ('product_name', 'image', 'category', 'description', 'selling_price', 'bid_end_date')
-
+#
+# class AddProductForm(forms.ModelForm):
+#     bid_end_date = forms.DateField(widget=forms.TextInput(attrs={'class': 'datepicker'}))
+#
+#     class Meta:
+#         model = Product
+#         fields = ('product_name', 'image', 'category', 'description', 'selling_price', 'bid_end_date')
+#

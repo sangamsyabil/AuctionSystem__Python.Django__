@@ -8,7 +8,7 @@ from django.core.validators import RegexValidator
 
 
 def getImage(instance, filename):
-    return "auction_system/image_{0}_{1}".format(str(time()), filename)
+    return "AuctionSystem/image_{0}_{1}".format(str(time()), filename)
 
 
 class Product(models.Model):
@@ -23,7 +23,7 @@ class Product(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     def __unicode__(self):
-        return self.id
+        return self.product_name
 
 
 class Seller(models.Model):
