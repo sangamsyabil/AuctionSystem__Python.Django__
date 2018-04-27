@@ -52,7 +52,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'HemAuctionSystem.urls'
 
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'AuctionApp/static/templates/auction_system')
+TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -121,14 +121,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_DIR = os.path.join(BASE_DIR, 'AuctionApp/static')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, MEDIA_URL)
+MEDIA_DIR = os.path.join(BASE_DIR, 'AuctionApp/media')
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'AuctionApp/static'),
-    os.path.join(BASE_DIR, 'media'),
-)
+STATICFILES_DIRS = [STATIC_DIR, MEDIA_DIR]
 
 LOGIN_REDIRECT_URL = "view_product"
 LOGIN_URL = "/accounts/login/"

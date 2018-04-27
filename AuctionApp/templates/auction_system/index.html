@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% extends "auction_system/home.html" %}
+
+{% block content %}
+<div class="container-fluid jumbotron " align="center">
+
+    <button type="button" class="btn btn-primary btn-lg">I am Seller</button>
+    <button type="button" class="btn btn-success btn-lg">I am Bidder</button>
+
+</div>
+
+<!-- About us page starts -->
+<div class="container">
+    <div class="row">
+      <div class="box_about_us">
+        <div class="about">
+          <h2>About Us</h2><hr>
+          <p>Welcome to Auction Web an online platform for buying and selling itmes. Founded in 2018, the concept is to save both our customres and clients time and money by providing 24/7 online services.Located in Montreal we sell a variety of items that includes electronics, furnitures, clothes, cars and many more things at a lower price and a 15 day payback option.<br><br> Our goal is to provide each customer, best shopping experience by providing world class customer services. We strive to establish long term relations with our customers and clients and we look forward to seeing each other on regular basis.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- About us page ends  -->
+<hr>
+<!-- Contact Page starts -->
+<div class="container">
+<div class="row">
+  <div class="col-sm-4">
+    <h3>Suggestions/Comments!</h3>
+    <hr>
+    <address>
+      <strong>Email:</strong> <a href="mailto:#"> sangamsyabil@gmail.com</a><br><br>
+      <strong>Phone:</strong> (555) 555-5555
+    </address>
+  </div>
+
+  <div class="col-sm-8 contact-form">
+    <form id="contact" method="post" class="form" role="form">
+      <div class="row">
+        <div class="col-xs-6 col-md-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
+        </div>
+        <div class="col-xs-6 col-md-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+        </div>
+      </div>
+      <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+      <br />
+      <div class="row">
+        <div class="col-xs-12 col-md-12 form-group">
+          <button class="btn btn-primary pull-right" type="submit">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+<!-- Contact Page ends -->
+
+{% endblock%}
